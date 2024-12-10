@@ -1,0 +1,225 @@
+/* Estilos Globais */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Tela Principal */
+.tela-inicial {
+  width: 393px;
+  height: 852px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  padding-bottom: 80px;
+}
+
+/* Cabeçalho */
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px 20px;
+  z-index: 1001;
+}
+
+.back-arrow {
+  width: 24px;
+  height: 24px;
+  fill: #7B2CBF;
+}
+
+.cadastrar-imovel {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: #7B2CBF;
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 15px;
+  cursor: pointer;
+  padding: 10px 5px;
+  text-align: left;
+  width: auto;
+}
+
+.cadastrar-imovel img {
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+  margin-bottom: 2px;
+}
+
+/* Boas-vindas */
+.welcome-section h1 {
+  font-family: 'Jura', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  color: #10002B;
+  margin: 20px 0;
+  margin-right: 135px;
+}
+
+/* Botões de categoria */
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-roxo {
+  font-family: 'Jura', sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 3px 5px;
+  background: #7B2CBF;
+  border-radius: 8px;
+  border-width: 2px;
+  border-color: #00000029;
+  margin-right: 10px;
+  width: 104px;
+  height: 24px;
+  color: white;
+  font-size: 12px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.btn-branco {
+  font-family: 'Jura', sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 3px 5px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  border-width: 2px;
+  border-color: #00000029;
+  margin-right: 127px;
+  width: 104px;
+  height: 24px;
+  color: #000000CC;
+  font-size: 12px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Slider de Imagem */
+.imagem-imovel {
+  width: 100%;
+  height: 230px;
+  border-radius: 15px 15px;
+  object-fit: cover;
+  margin-top: 25px;
+}
+
+.image-navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #bdbdbd;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.selected {
+  background-color: #7B2CBF;
+  width: 12px;
+  height: 12px;
+}
+
+/* Informações do Imóvel */
+.info-imovel {
+  margin-top: 20px;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.info-imovel h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.imovel-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.location, .price {
+  font-size: 14px;
+  color: #757575;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  color: #7B2CBF;
+}
+
+.rating-value {
+  margin-left: 5px;
+  color: #7B2CBF;
+  font-size: 16px;
+}
+
+/* Rodapé fixo */
+.nav-bottom {
+  background-color: #7B2CBF;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  border-radius: 10px 10px 0 0;
+  position: fixed;
+  bottom: 0;
+  width: 393px;
+  z-index: 1000;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-icon img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0.7);
+  transition: filter 0.3s ease;
+}
+
+/* Ícone selecionado */
+.nav-icon.selected img {
+  filter: brightness(2);
+}
+
+/* Efeito hover */
+.nav-icon:hover img {
+  filter: brightness(1);
+}
